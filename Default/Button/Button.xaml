@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MMS.UI.Default">
+    <ControlTemplate x:Key="ButtonbTemplate" TargetType="{x:Type local:Button}">
+        <Button  Foreground="#fff" Background="#0175c8" BorderThickness="0" FontSize="12" x:Name="button" />
+    </ControlTemplate>
+    <Style x:Key="ButtonStyle" TargetType="{x:Type local:Button}">
+        <Setter Property="Template" Value="{StaticResource ButtonbTemplate}" />
+    </Style>
+</ResourceDictionary>
