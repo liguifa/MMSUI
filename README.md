@@ -6,11 +6,11 @@
 使用方式：<br />
 <strong>step1:</strong><br />
 &nbsp;&nbsp;&nbsp;&nbsp;在WPF App.xaml的<Application.Resources>中加入以下代码：<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ResourceDictionary><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ResourceDictionary.MergedDictionaries><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ResourceDictionary Source="/MMS.UI;Component/Themes/Generic.xaml" /><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ResourceDictionary.MergedDictionaries><br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ResourceDictionary><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xmp><ResourceDictionary></xmp><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xmp><ResourceDictionary.MergedDictionaries></xmp><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xmp><ResourceDictionary Source="/MMS.UI;Component/Themes/Generic.xaml" /></xmp><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xmp></ResourceDictionary.MergedDictionaries></xmp><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xmp></ResourceDictionary></xmp><br />
 <strong>step2:</strong><br />
 &nbsp;&nbsp;&nbsp;&nbsp;修改MainWindow.cs 继承MMS.UI.Default.Window
 <strong>step3:</strong><br />
