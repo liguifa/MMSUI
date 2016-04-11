@@ -12,6 +12,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xmp></ResourceDictionary.MergedDictionaries></xmp><br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xmp></ResourceDictionary></xmp><br />
 <strong>step2:</strong><br />
-&nbsp;&nbsp;&nbsp;&nbsp;修改MainWindow.cs 继承MMS.UI.Default.Window
+&nbsp;&nbsp;&nbsp;&nbsp;修改MainWindow.cs 继承MMS.UI.Default.Window<br />
 <strong>step3:</strong><br />
 &nbsp;&nbsp;&nbsp;&nbsp;在MainWindow.xaml中引入MMS.UI.Default,即:xmlns:src="clr-namespace:MMS.UI.Default;assembly=MMS.UI",改Window为src:Window
