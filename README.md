@@ -1,7 +1,7 @@
 # MMSUI
-一个简单的 WPF UI框架
+一个简单的 WPF UI框架<br />
 这是一个简单的实例图：
-![image](https://github.com/liguifa/MMSUI/example.png)
+![image](https://github.com/liguifa/MMSUI/blob/master/example.png)
 
 使用方式：
 step1:在WPF App.xaml的<Application.Resources>中加入以下代码：
