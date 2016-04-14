@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MMS.UI.AUI">
+    <ControlTemplate x:Key="ColumnchartTemplate" TargetType="{x:Type local:Columnchart}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="20" />
+            </Grid.RowDefinitions>
+            <ItemsControl Grid.Row="0" Grid.Column="0" x:Name="scaleItem">
+                <ItemsControl.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding Path=Children}">
+                        <TextBlock Text="{Binding Scale}" FontFamily="Segoe UI" FontSize="12" Foreground="#333" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </HierarchicalDataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            <Border Grid.Column="1" Grid.Row="0" BorderBrush="#333" BorderThickness="1,0,0,1">
+                <ItemsControl x:Name="dataItem">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <HierarchicalDataTemplate>
+                            <Rectangle Height="{Binding Height}" Width="{Binding Width}" Fill="{Binding Color}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,0"></Rectangle>
+                        </HierarchicalDataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Border>
+        </Grid>
+    </ControlTemplate>
+    <Style x:Key="AUI_ColumnchartStyle" TargetType="{x:Type local:Columnchart}">
+        <Setter Property="Template" Value="{StaticResource ColumnchartTemplate}" />
+    </Style>
+</ResourceDictionary>

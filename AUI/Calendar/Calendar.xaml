@@ -1,0 +1,72 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MMS.UI.AUI">
+    <ControlTemplate x:Key="CalendarTemplate" TargetType="{x:Type local:Calendar}">
+        <Grid x:Name="calendar" Width="210" Height="210" Background="#fff">
+            <Border BorderBrush="#999" BorderThickness="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="27" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Background="#333"  Cursor="Hand" x:Name="titleBar">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="16" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="16" />
+                        </Grid.ColumnDefinitions>
+                        <Button Background="#333" Grid.Column="0" Cursor="Hand" Command="{Binding LeftCommand}" CommandParameter="{Binding DataContext}">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderThickness="0">
+                                        <Grid Background="{Binding Button.Background}" Width="{Binding Button.Width}" Height="{Binding Button.Height}">
+                                            <TextBlock  Text="&lt;" Foreground="#fff" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                                        </Grid>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                        <TextBlock Grid.Column="1" Text="{Binding TimeListTitle}" Foreground="#fff" FontSize="11" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <Button Background="#333" Grid.Column="2"  Cursor="Hand"  Command="{Binding RightCommand}" CommandParameter="{Binding DataContext}">
+                            <Button.Template>
+                                <ControlTemplate>
+                                    <Border BorderThickness="0">
+                                        <Grid Background="{Binding Button.Background}" Width="{Binding Button.Width}" Height="{Binding Button.Height}">
+                                            <TextBlock  Text="&gt;" Foreground="#fff" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                                        </Grid>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </Grid>
+                    <StackPanel Grid.Row="1" Background="#f1f1f1" Orientation="Vertical" HorizontalAlignment="Center">
+                        <StackPanel Width="200" Height="20" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"  Orientation="Horizontal">
+                            <TextBlock Text="Su" Margin="8,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="10" Width="28" Height="17" Background="#f1f1f1"  Foreground="#333" FontFamily="Segoe UI"/>
+                            <TextBlock Text="Mo" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Width="28" Height="17" Background="#f1f1f1" Foreground="#333" FontFamily="Segoe UI" />
+                            <TextBlock Text="Tu" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Width="28" Height="17" Background="#f1f1f1" Foreground="#333" FontFamily="Segoe UI" />
+                            <TextBlock Text="We" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Width="28" Height="17" Background="#f1f1f1" Foreground="#333" FontFamily="Segoe UI" />
+                            <TextBlock Text="Th" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Width="28" Height="17" Background="#f1f1f1" Foreground="#333" FontFamily="Segoe UI" />
+                            <TextBlock Text="Fr" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Width="28" Height="17" Background="#f1f1f1" Foreground="#333" FontFamily="Segoe UI" />
+                            <TextBlock Text="Sa" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Width="28" Height="17" Background="#f1f1f1" Foreground="#333" FontFamily="Segoe UI" />
+                        </StackPanel>
+                        <ItemsControl Grid.Row="2" Width="200" Height="147" ItemsSource="{Binding TimeList}" Margin="0,0,0,0" Background="#fff" BorderBrush="#bbb" BorderThickness="1">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <HierarchicalDataTemplate ItemsSource="{Binding Path=Children}">
+                                    <Button Grid.Row="0" Grid.Column="0" Background="#fff" Content="{Binding Day}" Opacity="1" BorderBrush="#000" BorderThickness="0" Width="28" Height="24" VerticalAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Command="{Binding ChooseCommand}" CommandParameter="{Binding Parameter}" Cursor="Hand" />
+                                </HierarchicalDataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </ControlTemplate>
+    <Style x:Key="AUI_CalendarStyle" TargetType="{x:Type local:Calendar}">
+        <Setter Property="Template"  Value="{StaticResource CalendarTemplate}" />
+    </Style>
+</ResourceDictionary>

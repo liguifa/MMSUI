@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Interop;
 using System.Runtime.InteropServices;
 
-namespace MMS.UI.Default
+namespace MMS.UI.Common
 {
 
     #region Repair WPF Window Full Screen

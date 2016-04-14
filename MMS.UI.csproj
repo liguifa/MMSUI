@@ -56,13 +56,69 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Amazeui\Icon\Icon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Amazeui\Navbar\Navbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Amazeui\Titlebar\TitleBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AUI\Breadcrumb\Breadcrumb.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AUI\Buttongroup\Buttongroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AUI\Button\Button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AUI\Carousel\Carousel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AUI\Columnchart\Columnchart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AUI\Datagrid\Datagrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Amazeui\Header\Header.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AUI\Slider\Slider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Default\Button\Button.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AUI\Calendar\Calendar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Default\Calendar\Calendar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Default\Connection\Connection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Default\Edit\Edit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Default\Explorer\Explorer.xaml">
       <SubType>Designer</SubType>
@@ -71,6 +127,10 @@
     <Page Include="Default\Menu\Menu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Default\Navigation\Navigation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Default\Table\Table.xaml">
       <SubType>Designer</SubType>
@@ -96,19 +156,56 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="VS\Resources\Resource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VS\Window\Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Amazeui\Icon\Convert\ConvertFromIconTypeToTemplate.cs" />
+    <Compile Include="Amazeui\Icon\Icon.cs" />
+    <Compile Include="Amazeui\Navbar\Navbar.cs" />
+    <Compile Include="Amazeui\Titlebar\TitleBar.cs" />
+    <Compile Include="AUI\Breadcrumb\Breadcrumb.cs" />
+    <Compile Include="AUI\Breadcrumb\BreadcrumbItem.cs" />
+    <Compile Include="AUI\Buttongroup\Buttongroup.cs" />
+    <Compile Include="AUI\Button\Button.cs" />
+    <Compile Include="AUI\Carousel\Carousel.cs" />
+    <Compile Include="AUI\Columnchart\Columnchart.cs" />
+    <Compile Include="AUI\Datagrid\Datagrid.cs" />
+    <Compile Include="AUI\Datagrid\DatagridData.cs" />
+    <Compile Include="Amazeui\Header\Header.cs" />
+    <Compile Include="AUI\Slider\Convert\ConvertFromStatusToColor.cs" />
+    <Compile Include="AUI\Slider\Convert\ConvertFromStatusToThickness.cs" />
+    <Compile Include="AUI\Slider\Point.cs" />
+    <Compile Include="AUI\Slider\Slider.cs" />
     <Compile Include="Common\BaseINotifyPropertyChanged.cs" />
     <Compile Include="Default\Button\Button.cs" />
+    <Compile Include="AUI\Calendar\Calendar.cs" />
+    <Compile Include="AUI\Calendar\CalendarHandle.cs" />
+    <Compile Include="AUI\Calendar\CalendarViewModel.cs" />
+    <Compile Include="Default\Calendar\Calendar.cs" />
+    <Compile Include="Default\Calendar\CalendarHandle.cs" />
+    <Compile Include="Default\Calendar\CalendarViewModel.cs" />
     <Compile Include="Default\Connection\Connection.cs" />
+    <Compile Include="Default\Edit\Edit.cs" />
+    <Compile Include="Default\Edit\GrammarType.cs" />
     <Compile Include="Default\Explorer\Explorer.cs" />
     <Compile Include="Default\Explorer\ExplorerItem.cs" />
     <Compile Include="Default\Menu\Menu.cs" />
     <Compile Include="Default\Menu\MenuItem.cs" />
+    <Compile Include="Default\Navigation\Convert\BorderConvert.cs" />
+    <Compile Include="Default\Navigation\Convert\StatusConvert.cs" />
+    <Compile Include="Default\Navigation\Navigation.cs" />
+    <Compile Include="Default\Navigation\NavigationItem.cs" />
     <Compile Include="Default\Table\Table.cs" />
     <Compile Include="Default\Tabs\Tabs.cs" />
     <Compile Include="Default\TextBox\TextBox.cs" />
-    <Compile Include="Default\Window\RepairWindow.cs" />
+    <Compile Include="Common\RepairWindow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -123,6 +220,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Default\Window\Window.cs" />
+    <Compile Include="VS\Window\Window.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -174,6 +272,61 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Default\Resource\Images\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="VS\Resources\Images\Back.png" />
+    <Resource Include="VS\Resources\Images\Back1.png" />
+    <Resource Include="VS\Resources\Images\BackDark.png" />
+    <Resource Include="VS\Resources\Images\CodeDark.png" />
+    <Resource Include="VS\Resources\Images\CodeLight.png" />
+    <Resource Include="VS\Resources\Images\DarkTheme.png" />
+    <Resource Include="VS\Resources\Images\Document.png" />
+    <Resource Include="VS\Resources\Images\Forward.png" />
+    <Resource Include="VS\Resources\Images\ForwardDark.png" />
+    <Resource Include="VS\Resources\Images\LightTheme.png" />
+    <Resource Include="VS\Resources\Images\NewProject.png" />
+    <Resource Include="VS\Resources\Images\NewProjectDark.png" />
+    <Resource Include="VS\Resources\Images\OpenExistingPlace.png" />
+    <Resource Include="VS\Resources\Images\OpenFile.png" />
+    <Resource Include="VS\Resources\Images\OpenFileDark.png" />
+    <Resource Include="VS\Resources\Images\Redo.png" />
+    <Resource Include="VS\Resources\Images\RedoDark.png" />
+    <Resource Include="VS\Resources\Images\SaveAllButton.png" />
+    <Resource Include="VS\Resources\Images\SaveAllButtonDark.png" />
+    <Resource Include="VS\Resources\Images\SaveButton.png" />
+    <Resource Include="VS\Resources\Images\SaveButtonDark.png" />
+    <Resource Include="VS\Resources\Images\Start.png" />
+    <Resource Include="VS\Resources\Images\StartDark.png" />
+    <Resource Include="VS\Resources\Images\Undo.png" />
+    <Resource Include="VS\Resources\Images\UndoDark.png" />
+    <Resource Include="VS\Resources\Images\Unpinned.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Default\Resource\Images\Calendar.png" />
+    <Resource Include="Default\Resource\Images\left-btn.gif" />
+    <Resource Include="Default\Resource\Images\right-btn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Default\Calendar\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Default\Navigation\Images\wi_Configured_12x12.png" />
+    <Resource Include="Default\Navigation\Images\wi_Configuring_12x12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AUI\Carousel\image_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AUI\Carousel\carousel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AUI\Carousel\image_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Amazeui\Icon\Images\Index.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Amazeui\Icon\Images\Menu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

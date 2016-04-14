@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ControlTemplate x:Key="Amazeui_Icon_Index" TargetType="{x:Type Button}">
+        <Grid Width="30" Height="30">
+            <Image Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center" Source="Images/Index.png" Stretch="UniformToFill" Cursor="Hand" />
+        </Grid>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="Amazeui_Icon_Menu" TargetType="{x:Type Button}">
+        <Grid Width="30" Height="30">
+            <Image Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center" Source="Images/Menu.png" Stretch="UniformToFill" Cursor="Hand" />
+        </Grid>
+    </ControlTemplate>
+</ResourceDictionary>
