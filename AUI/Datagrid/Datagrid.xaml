@@ -1,0 +1,56 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MMS.UI.AUI">
+    <ControlTemplate x:Key="DatagridTemplate" TargetType="{x:Type local:Datagrid}">
+        <Border BorderBrush="#B5B5B5" BorderThickness="1" x:Name="mainControl">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <ItemsControl Grid.Row="0" ItemsSource="{Binding Theads}" Background="#444">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <HierarchicalDataTemplate ItemsSource="{Binding Path=Children}">
+                                <Border BorderBrush="gray" BorderThickness="0,0,1,0">
+                                    <TextBlock  Background="#444" Margin="10,0,0,0" Text="{Binding Text}" Foreground="#fff" FontSize="13" FontFamily="Segoe Ui" Width="{Binding Width}" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                                </Border>
+                            </HierarchicalDataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <ItemsControl Grid.Row="1" ItemsSource="{Binding Rows}" Background="#fff">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Vertical" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <HierarchicalDataTemplate ItemsSource="{Binding Path=Children}">
+                                <ItemsControl ItemsSource="{Binding Row}" Height="30">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Horizontal" />
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <HierarchicalDataTemplate ItemsSource="{Binding Path=Children}">
+                                            <TextBlock Background="{Binding Color}" Margin="10,0,0,0" Text="{Binding Text}" Foreground="{Binding Foreground}" FontSize="13" FontFamily="Segoe Ui" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                                        </HierarchicalDataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </HierarchicalDataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Grid>
+            </ScrollViewer>
+        </Border>
+    </ControlTemplate>
+    <Style x:Key="AUI_DatagridStyle" TargetType="{x:Type local:Datagrid}">
+        <Setter Property="Template" Value="{StaticResource DatagridTemplate}" />
+    </Style>
+</ResourceDictionary>

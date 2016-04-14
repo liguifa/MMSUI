@@ -275,4 +275,91 @@
             </EventTrigger>
         </ControlTemplate.Triggers-->
     </ControlTemplate>
+    <ControlTemplate x:Key="Calendar_left_btn" TargetType="{x:Type Button}">
+        <Grid Width="16" Height="16">
+            <Image x:Name="lef_btn_normal" Source="Images\left-btn.gif" Stretch="UniformToFill" />
+            <Image x:Name="lef_btn_over" Source="Images\left-btn.gif" Stretch="UniformToFill" Opacity="0"/>
+            <Image x:Name="lef_btn_down" Source="Images\left-btn.gif" Stretch="UniformToFill" Opacity="0" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsKeyboardFocused" Value="true">
+                <Setter Property="Opacity" TargetName="lef_btn_over" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Opacity" TargetName="lef_btn_over" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="true">
+                <Setter Property="Opacity" TargetName="lef_btn_down" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Opacity" TargetName="lef_btn_over" Value="1"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+        <!--ControlTemplate.Triggers>
+            <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                <BeginStoryboard Storyboard="{StaticResource OnMouseEnter1}"/>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                <BeginStoryboard x:Name="OnMouseMove1_BeginStoryboard1" Storyboard="{StaticResource OnMouseMove1}"/>
+            </EventTrigger>
+        </ControlTemplate.Triggers-->
+    </ControlTemplate>
+    <ControlTemplate x:Key="Calendar_right_btn" TargetType="{x:Type Button}">
+        <Grid Width="16" Height="16">
+            <Image x:Name="right_btn_normal" Source="Images\right-btn.gif" Stretch="UniformToFill" />
+            <Image x:Name="right_btn_over" Source="Images\right-btn.gif" Stretch="UniformToFill" Opacity="0"/>
+            <Image x:Name="right_btn_down" Source="Images\right-btn.gif" Stretch="UniformToFill" Opacity="0" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsKeyboardFocused" Value="true">
+                <Setter Property="Opacity" TargetName="right_btn_over" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Opacity" TargetName="right_btn_over" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="true">
+                <Setter Property="Opacity" TargetName="right_btn_down" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Opacity" TargetName="right_btn_over" Value="1"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+        <!--ControlTemplate.Triggers>
+            <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                <BeginStoryboard Storyboard="{StaticResource OnMouseEnter1}"/>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                <BeginStoryboard x:Name="OnMouseMove1_BeginStoryboard1" Storyboard="{StaticResource OnMouseMove1}"/>
+            </EventTrigger>
+        </ControlTemplate.Triggers-->
+    </ControlTemplate>
+    <ControlTemplate x:Key="Calendar_show_btn" TargetType="{x:Type Button}">
+        <Grid Width="16" Height="16">
+            <Image x:Name="show_btn_normal" Source="Images\Calendar.png" Stretch="UniformToFill" />
+            <Image x:Name="show_btn_over" Source="Images\Calendar.png" Stretch="UniformToFill" Opacity="0"/>
+            <Image x:Name="show_btn_down" Source="Images\Calendar.png" Stretch="UniformToFill" Opacity="0" />
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsKeyboardFocused" Value="true">
+                <Setter Property="Opacity" TargetName="show_btn_over" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Opacity" TargetName="show_btn_over" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="true">
+                <Setter Property="Opacity" TargetName="show_btn_down" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Opacity" TargetName="show_btn_over" Value="1"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+        <!--ControlTemplate.Triggers>
+            <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                <BeginStoryboard Storyboard="{StaticResource OnMouseEnter1}"/>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                <BeginStoryboard x:Name="OnMouseMove1_BeginStoryboard1" Storyboard="{StaticResource OnMouseMove1}"/>
+            </EventTrigger>
+        </ControlTemplate.Triggers-->
+    </ControlTemplate>
 </ResourceDictionary>

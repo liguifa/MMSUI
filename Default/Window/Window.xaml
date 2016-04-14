@@ -63,6 +63,5 @@
         <Setter Property="Template" Value="{StaticResource DefaultWindowTemplate}"/>
         <Setter Property="AllowsTransparency" Value="True" />
         <Setter Property="WindowStyle" Value="None" />
-        <Setter Property="MinWidth" Value="500"/>
     </Style>
 </ResourceDictionary>

@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MMS.UI.AUI">
+    <ControlTemplate x:Key="ButtonTemplate" TargetType="{x:Type local:Button}">
+        <Button x:Name="mainBtn" Width="81.8" Height="30" Content="Button" VerticalContentAlignment="Center">
+            <Button.Template>
+                <ControlTemplate>
+                    <Border  Margin="{TemplateBinding Button.Padding}" BorderBrush="#999" BorderThickness="1"  Background="{TemplateBinding Button.Background}" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Grid Width="{TemplateBinding Button.Width}" Height="{TemplateBinding Control.Height}">
+                            <TextBlock x:Name="btnContext" Width="auto" Margin="0,0,0,5"  Cursor="Hand" Text="{TemplateBinding Button.Content}" Background="{TemplateBinding Button.Background}" FontSize="14" FontFamily="Segoe Ui" Foreground="#333" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsMouseOver" Value="True">
+                            <Setter Property="Button.Background" Value="#eee"/>
+                        </Trigger>
+                        <Trigger Property="Button.IsMouseOver" Value="false">
+                            <Setter Property="Button.Background" Value="#fff"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </ControlTemplate>
+    <Style x:Key="ButtonStyle" TargetType="{x:Type local:Button}">
+        <Setter Property="Template" Value="{StaticResource ButtonTemplate}" />
+    </Style>
+</ResourceDictionary>

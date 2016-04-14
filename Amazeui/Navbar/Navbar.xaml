@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MMS.UI.Amazeui">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/MMS.UI;Component/Amazeui/Icon/Icon.xaml" />
+        <ResourceDictionary>
+            <local:ConvertFromIconTypeToTemplate x:Key="ConvertFromIconTypeToTemplate" />
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+    <ControlTemplate x:Key="NavbarTemplate" TargetType="{x:Type local:Navbar}">
+        <Grid Background="#0e90d2" Height="50" VerticalAlignment="Bottom">
+            <ItemsControl>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <HierarchicalDataTemplate>
+                        <Button x:Name="leftBtn" Template="{Binding IconType,Converter={StaticResource ConvertFromIconTypeToTemplate}}" />
+                    </HierarchicalDataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
+    </ControlTemplate>
+    <Style x:Key="Amazeui_NavbarStyle" TargetType="{x:Type local:Navbar}">
+        <Setter Property="Template" Value="{StaticResource NavbarTemplate}" />
+    </Style>
+</ResourceDictionary>

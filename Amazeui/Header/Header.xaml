@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MMS.UI.Amazeui">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/MMS.UI;Component/Amazeui/Icon/Icon.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <ControlTemplate x:Key="HeaderTemolate" TargetType="{x:Type local:Header}">
+        <Grid Background="#0e90d2" Height="49" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="44" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="44" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="leftBtn" Template="{StaticResource Amazeui_Icon_Index}" />
+            <Label Grid.Column="1" x:Name="titleBar" Foreground="#fff" FontFamily="Segoe UI" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" 
+                   HorizontalContentAlignment="Center" />
+            <Button Grid.Column="2" x:Name="rightBtn"  Template="{StaticResource Amazeui_Icon_Menu}"/>
+        </Grid>
+    </ControlTemplate>
+    <Style x:Key="Amazeui_HeaderStyle" TargetType="{x:Type local:Header}">
+        <Setter Property="Template" Value="{StaticResource HeaderTemolate}" />
+    </Style>
+</ResourceDictionary>
