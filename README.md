@@ -12,7 +12,7 @@
 
 ![image](https://github.com/liguifa/MMSUI/blob/master/example.png)
 
-## s使用方式
+## 使用方式
 
 <strong>step1:</strong><br />
 &nbsp;&nbsp;&nbsp;&nbsp;在WPF App.xaml的<Application.Resources>中加入以下代码：<br />
