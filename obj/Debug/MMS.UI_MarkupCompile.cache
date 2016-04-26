@@ -4,17 +4,17 @@
 library
 C#
 .cs
-C:\Users\gfli\Source\Repos\MMSUI\obj\Debug\
+C:\Users\gfli\Source\Repos\MMSUI2\obj\Debug\
 MMS.UI
 none
 false
 DEBUG;TRACE
 
-2776937581
+291677558059
 
-45349788046
-13333043175
-Amazeui\Icon\Icon.xaml;Amazeui\Navbar\Navbar.xaml;Amazeui\Titlebar\TitleBar.xaml;AUI\Breadcrumb\Breadcrumb.xaml;AUI\Buttongroup\Buttongroup.xaml;AUI\Button\Button.xaml;AUI\Carousel\Carousel.xaml;AUI\Columnchart\Columnchart.xaml;AUI\Datagrid\Datagrid.xaml;Amazeui\Header\Header.xaml;AUI\Slider\Slider.xaml;Default\Button\Button.xaml;AUI\Calendar\Calendar.xaml;Default\Calendar\Calendar.xaml;Default\Connection\Connection.xaml;Default\Edit\Edit.xaml;Default\Explorer\Explorer.xaml;Default\Menu\Menu.xaml;Default\Navigation\Navigation.xaml;Default\Table\Table.xaml;Default\Tabs\Tabs.xaml;Default\TextBox\TextBox.xaml;Themes\Generic.xaml;Default\Resource\Resource.xaml;Default\Window\Window.xaml;VS\Resources\Resource.xaml;VS\Window\Window.xaml;
+49188504552
+13-313467715
+Amazeui\ContentList\ContentList.xaml;Amazeui\Gallery\Gallery.xaml;Amazeui\Icon\Icon.xaml;Amazeui\Navbar\Navbar.xaml;Amazeui\Titlebar\TitleBar.xaml;AUI\Breadcrumb\Breadcrumb.xaml;AUI\Buttongroup\Buttongroup.xaml;AUI\Button\Button.xaml;AUI\Carousel\Carousel.xaml;AUI\Columnchart\Columnchart.xaml;AUI\Datagrid\Datagrid.xaml;Amazeui\Header\Header.xaml;AUI\Slider\Slider.xaml;Default\Button\Button.xaml;AUI\Calendar\Calendar.xaml;Default\Calendar\Calendar.xaml;Default\Connection\Connection.xaml;Default\Edit\Edit.xaml;Default\Explorer\Explorer.xaml;Default\Menu\Menu.xaml;Default\Navigation\Navigation.xaml;Default\Table\Table.xaml;Default\Tabs\Tabs.xaml;Default\TextBox\TextBox.xaml;Themes\Generic.xaml;Default\Resource\Resource.xaml;Default\Window\Window.xaml;VS\Resources\Resource.xaml;VS\Window\Window.xaml;
 
 False
 

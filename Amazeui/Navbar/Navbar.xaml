@@ -25,5 +25,7 @@
     </ControlTemplate>
     <Style x:Key="Amazeui_NavbarStyle" TargetType="{x:Type local:Navbar}">
         <Setter Property="Template" Value="{StaticResource NavbarTemplate}" />
+        <Setter Property="Height" Value="50" />
+        <Setter Property="VerticalAlignment" Value="Bottom" />
     </Style>
 </ResourceDictionary>

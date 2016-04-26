@@ -56,6 +56,14 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Amazeui\ContentList\ContentList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Amazeui\Gallery\Gallery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Amazeui\Icon\Icon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -166,6 +174,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Amazeui\ContentList\ContentList.cs" />
+    <Compile Include="Amazeui\ContentList\ContentListItem.cs" />
+    <Compile Include="Amazeui\Gallery\Gallery.cs" />
+    <Compile Include="Amazeui\Gallery\GalleryItem.cs" />
     <Compile Include="Amazeui\Icon\Convert\ConvertFromIconTypeToTemplate.cs" />
     <Compile Include="Amazeui\Icon\Icon.cs" />
     <Compile Include="Amazeui\Navbar\Navbar.cs" />
