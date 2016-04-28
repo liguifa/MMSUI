@@ -60,15 +60,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Amazeui\Gallery\Gallery.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Amazeui\Icon\Icon.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Amazeui\Navbar\Navbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Amazeui\Tabs\Tabs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -181,6 +181,8 @@
     <Compile Include="Amazeui\Icon\Convert\ConvertFromIconTypeToTemplate.cs" />
     <Compile Include="Amazeui\Icon\Icon.cs" />
     <Compile Include="Amazeui\Navbar\Navbar.cs" />
+    <Compile Include="Amazeui\Tabs\TabPanel.cs" />
+    <Compile Include="Amazeui\Tabs\Tabs.cs" />
     <Compile Include="Amazeui\Titlebar\TitleBar.cs" />
     <Compile Include="AUI\Breadcrumb\Breadcrumb.cs" />
     <Compile Include="AUI\Breadcrumb\BreadcrumbItem.cs" />
