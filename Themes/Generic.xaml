@@ -25,7 +25,7 @@
         <ResourceDictionary Source="/MMS.UI;Component/Amazeui/Header/Header.xaml" />
         <ResourceDictionary Source="/MMS.UI;Component/Amazeui/Navbar/Navbar.xaml" />
         <ResourceDictionary Source="/MMS.UI;Component/Amazeui/Titlebar/TitleBar.xaml" />
-        <ResourceDictionary Source="/MMS.UI;Component/Amazeui/Gallery/Gallery.xaml" />
+        <!--<ResourceDictionary Source="/MMS.UI;Component/Amazeui/Gallery/Gallery.xaml" />-->
         <ResourceDictionary Source="/MMS.UI;Component/Amazeui/ContentList/ContentList.xaml" />
         <ResourceDictionary Source="/MMS.UI;Component/Amazeui/Tabs/Tabs.xaml" />
     </ResourceDictionary.MergedDictionaries>
@@ -50,7 +50,7 @@
     <Style TargetType="{x:Type amazeui:Header}" BasedOn="{StaticResource Amazeui_HeaderStyle}" />
     <Style TargetType="{x:Type amazeui:Navbar}" BasedOn="{StaticResource Amazeui_NavbarStyle}" />
     <Style TargetType="{x:Type amazeui:TitleBar}" BasedOn="{StaticResource Amazeui_TitleBarStyle}" />
-    <Style TargetType="{x:Type amazeui:Gallery}" BasedOn="{StaticResource Amazeui_GalleryStyle}" />
-    <Style TargetType="{x:Type amazeui:ContentList}" BasedOn="{StaticResource Amazeui_GalleryStyle}" />
+    <!--<Style TargetType="{x:Type amazeui:Gallery}" BasedOn="{StaticResource Amazeui_GalleryStyle}" />-->
+    <Style TargetType="{x:Type amazeui:ContentList}" BasedOn="{StaticResource Amazeui_ContentList}" />
     <Style TargetType="{x:Type amazeui:Tabs}" BasedOn="{StaticResource Amazeui_TabsStyle}" />
 </ResourceDictionary>

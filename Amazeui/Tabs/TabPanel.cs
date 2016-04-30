@@ -30,6 +30,16 @@ namespace MMS.UI.Amazeui
         public static readonly DependencyProperty ContextProperty =
             DependencyProperty.Register("Context", typeof(String), typeof(TabPanel), new PropertyMetadata(null));
 
+        public bool IsChecked
+        {
+            get { return (bool)GetValue(IsCheckedProperty); }
+            set { SetValue(IsCheckedProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty IsCheckedProperty =
+            DependencyProperty.Register("IsChecked", typeof(bool), typeof(TabPanel), new PropertyMetadata(false));
+
 
     }
 }

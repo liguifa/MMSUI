@@ -181,6 +181,7 @@
     <Compile Include="Amazeui\Icon\Convert\ConvertFromIconTypeToTemplate.cs" />
     <Compile Include="Amazeui\Icon\Icon.cs" />
     <Compile Include="Amazeui\Navbar\Navbar.cs" />
+    <Compile Include="Amazeui\Tabs\TabItem.cs" />
     <Compile Include="Amazeui\Tabs\TabPanel.cs" />
     <Compile Include="Amazeui\Tabs\Tabs.cs" />
     <Compile Include="Amazeui\Titlebar\TitleBar.cs" />

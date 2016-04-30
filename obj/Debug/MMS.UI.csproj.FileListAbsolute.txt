@@ -117,3 +117,4 @@ C:\Users\Guifa.Lee\Source\Repos\MMSUI\obj\Debug\MMS.UI.Properties.Resources.reso
 C:\Users\Guifa.Lee\Source\Repos\MMSUI\obj\Debug\MMS.UI.csproj.GenerateResource.Cache
 C:\Users\Guifa.Lee\Source\Repos\MMSUI\obj\Debug\MMS.UI.dll
 C:\Users\Guifa.Lee\Source\Repos\MMSUI\obj\Debug\MMS.UI.pdb
+C:\Users\Guifa.Lee\Source\Repos\MMSUI\obj\Debug\MMS.UI.csprojResolveAssemblyReference.cache

@@ -8,7 +8,7 @@
                     <RowDefinition Height="42" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <ItemsControl Grid.Row="0" Background="EEEEEE" Height="42" x:Name="titleControl">
+                <ItemsControl Grid.Row="0" Background="#EEEEEE" Height="42" ItemsSource="{Binding Header}" x:Name="titleControl">
                     <ItemsControl.ItemsPanel>
                         <ItemsPanelTemplate>
                             <StackPanel Orientation="Horizontal" />
@@ -19,7 +19,7 @@
                             <Button>
                                 <Button.Template>
                                     <ControlTemplate>
-                                        <Label Content="{Binding Title}" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Foreground="#ffffff" FontFamily="Segoe UI" />
+                                        <Label Content="{Binding Title}" Background="{Binding Background}" Margin="0,0,0,0" VerticalAlignment="Stretch"  VerticalContentAlignment="Center" HorizontalAlignment="Stretch"  HorizontalContentAlignment="Center" FontSize="14" Foreground="#000000" FontFamily="Segoe UI" />
                                     </ControlTemplate>
                                 </Button.Template>
                             </Button>
